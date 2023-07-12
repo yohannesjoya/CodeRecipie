@@ -9,11 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@codemirror/lang-java": "^6.0.1",
+    "@codemirror/lang-javascript": "6.0.1",
+    "@codemirror/lang-python": "^6.1.3",
+    "@codemirror/lang-xml": "^6.0.2",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "@replit/codemirror-lang-csharp": "^6.1.0",
+    "@uiw/react-codemirror": "4.10.4",
     "autoprefixer": "10.4.14",
+    "bcrypt": "^5.1.0",
+    "class-variance-authority": "^0.6.1",
+    "clsx": "^1.2.1",
+    "lucide-react": "^0.256.0",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.1.1",
     "next": "13.4.2",
+    "next-auth": "^4.22.1",
     "postcss": "8.4.23",
     "react": "18.2.0",
+    "react-content-loader": "^6.2.1",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.2"
+    "react-toastify": "^9.1.3",
+    "server-only": "^0.0.1",
+    "tailwind-merge": "^1.13.2",
+    "tailwindcss": "3.3.2",
+    "tailwindcss-animate": "^1.0.6"
   }
 }
