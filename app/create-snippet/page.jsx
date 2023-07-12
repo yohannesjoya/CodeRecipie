@@ -55,12 +55,15 @@ const CreatePost = () => {
         }),
       });
       if (response.ok) {
-        router.push("/");
         toast("🦄 Snippet Created!!", {
           type: "success",
           theme: "light",
           autoClose: "5000",
         });
+
+        setTimeout(() => {
+          router.push("/profile");
+        }, 1500);
       }
     } catch (error) {
       toast("🦄 Failed to create!", {

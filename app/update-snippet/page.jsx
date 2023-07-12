@@ -58,7 +58,9 @@ const UpdatePost = () => {
           progress: undefined,
           theme: "light",
         });
-        router.push("/");
+        setTimeout(() => {
+          router.push("/profile");
+        }, 1500);
       }
     } catch (error) {
       toast("🦄 Failed to Update!", {

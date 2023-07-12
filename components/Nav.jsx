@@ -2,6 +2,7 @@
 
 import logo from "@assets/my_logo.png";
 import Link from "next/link";
+import SignDialogue from "./SignIn";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
@@ -21,6 +22,8 @@ const Nav = () => {
 
   return (
     <nav className="flex-between w-full mb-6 mt-4 pt-3">
+      {!session?.user && <SignDialogue providers={providers} />}
+
       <Link href="/" className="flex gap-2 flex-center">
         <Image
           src={logo}
@@ -56,7 +59,10 @@ const Nav = () => {
           </div>
         ) : (
           <>
-            {providers &&
+            {/* <button type="button" onClick={signOut} className="outline_btn">
+              Sign In
+            </button> */}
+            {/* {providers &&
               Object.values(providers).map((provider) => (
                 <button
                   type="button"
@@ -68,7 +74,7 @@ const Nav = () => {
                 >
                   Sign in {provider.name}
                 </button>
-              ))}
+              ))} */}
           </>
         )}
       </div>
@@ -117,7 +123,7 @@ const Nav = () => {
           </div>
         ) : (
           <>
-            {providers &&
+            {/* {providers &&
               Object.values(providers).map((provider) => (
                 <button
                   type="button"
@@ -129,7 +135,7 @@ const Nav = () => {
                 >
                   Sign in
                 </button>
-              ))}
+              ))} */}
           </>
         )}
       </div>

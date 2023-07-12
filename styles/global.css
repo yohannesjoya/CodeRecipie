@@ -81,12 +81,21 @@
   @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
 }
 
+
+.white_btn {
+  @apply rounded-sm border shadow-md bg-white py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
+}
+
+
 .outline_btn {
   @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
 }
 
 .head_text {
   @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+}
+.mid_head_text {
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black text-xl md:text-2xl;
 }
 
 .orange_gradient {
@@ -212,6 +221,4 @@
   }
 }
 
-.gg {
-  border: 1px solid red;
-}
+
